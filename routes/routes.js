@@ -4,7 +4,7 @@ const Router = express.Router;
 const router = new Router();
 const employeeController = require("../controllers/employee.controllers");
 
-let routes = (app) => {
+const routes = (app) => {
   router.get("/employees", employeeController.getEmployees);
 
   app.use("/api", router);
